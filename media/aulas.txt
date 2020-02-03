@@ -1,0 +1,74 @@
+30/01/20
+
+JEE
+
+Turma: 11563
+Sala: 19
+Professor: Roque
+Horario: 19 ~ 22
+Intervalo: 20:30
+
+smb://10.0.254.210/alunos em 10.0.254.210/semana_noite/Roque/Turma 11563
+/home/aluno/workspace-11563
+
+
+Spring boot
+https://spring.io/projects/spring-boot
+
+MVC
+
+Tomcat
+
+JRE: Componentes do compilador - mas não é o compilador
+
+JAVASE: 1.6
+
+http://tomcat.apache.org/
+
+JRE - máquina virtual - rodar a aplicação
+JDK - Java develop kit - 
+Eclipse 
+Apache
+
+Eclipse para JEE
+
+Dynamic Web Project
+
+http://localhost:8080/
+
+http://localhost:8080/Projeto1/index.jsp
+
+-------------------------------------------------
+31/01/2020 - Aula 02
+
+https://wiki.eclipse.org/EGit/User_Guide/Getting_Started
+https://wiki.eclipse.org/EGit/User_Guide#Push_Upstream
+https://gist.github.com/derhuerst/1b15ff4652a867391f03#file-linux-md
+https://confluence.atlassian.com/crucible042/installing-and-upgrading-git-869175555.html
+
+-- Containers JEE
+* Web container: controla JSPs e Servlets
+* EJB (Enterprise JavaBeans): gerencia execução EJB 
+* Application client container: Cliente das aplicações
+* Applet container: gerencia applets
+
+Cannot complete the install because one or more required items could not be found.
+  Software being installed: Git integration for Eclipse 5.6.0.201912101111-r (org.eclipse.egit.feature.group 5.6.0.201912101111-r)
+  Missing requirement: Git integration for Eclipse - UI 5.6.0.201912101111-r (org.eclipse.egit.ui 5.6.0.201912101111-r) requires 'bundle org.apache.ant [1.10.5,2.0.0)' but it could not be found
+  Cannot satisfy dependency:
+    From: Git integration for Eclipse 5.6.0.201912101111-r (org.eclipse.egit.feature.group 5.6.0.201912101111-r)
+    To: org.eclipse.egit.ui [5.6.0.201912101111-r]
+    
+ scriptles
+ 
+ ---------------------------------------------
+ 03/02/2020
+ 
+ https://github.com/Vlavros/JEE_11563.git
+ 
+ Scriptlet
+ Expression
+
+
+
+
