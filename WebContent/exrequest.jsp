@@ -19,7 +19,7 @@
 		n1 = Double.valueOf(request.getParameter("n1"));
 		n2 = Double.valueOf(request.getParameter("n2"));
 		
-		out.print("<br>A soma de n1 e n2 é: ");
+		out.print("<br>A soma de n1: "+String.valueOf(n1)+" e n2: "+String.valueOf(n2)+" é: ");
 		out.print(n1+n2);
 		
 	} catch(Exception ex) {

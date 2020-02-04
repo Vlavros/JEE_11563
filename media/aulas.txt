@@ -66,6 +66,8 @@ Cannot complete the install because one or more required items could not be foun
  
  https://github.com/Vlavros/JEE_11563.git
  
+ https://stackoverflow.com/questions/16527576/httpservletrequest-utf-8-encoding/16549329
+ 
  Scriptlet
  Expression
 
