@@ -4,7 +4,7 @@ JEE
 
 Turma: 11563
 Sala: 19
-Professor: Roque
+Professor: ROQUE JOSÉ MULLER JÚNIOR
 Horario: 19 ~ 22
 Intervalo: 20:30
 
@@ -55,7 +55,7 @@ https://confluence.atlassian.com/crucible042/installing-and-upgrading-git-869175
 Cannot complete the install because one or more required items could not be found.
   Software being installed: Git integration for Eclipse 5.6.0.201912101111-r (org.eclipse.egit.feature.group 5.6.0.201912101111-r)
   Missing requirement: Git integration for Eclipse - UI 5.6.0.201912101111-r (org.eclipse.egit.ui 5.6.0.201912101111-r) requires 'bundle org.apache.ant [1.10.5,2.0.0)' but it could not be found
-  Cannot satisfy dependency:
+  Cannot satisfy dependenhttps://www.tutorialspoint.com/jsp/jsp_custom_tags.htmcy:
     From: Git integration for Eclipse 5.6.0.201912101111-r (org.eclipse.egit.feature.group 5.6.0.201912101111-r)
     To: org.eclipse.egit.ui [5.6.0.201912101111-r]
     
@@ -71,6 +71,17 @@ Cannot complete the install because one or more required items could not be foun
  Scriptlet
  Expression
 
+ ---------------------------------------------
+ 04/02/2020
+ 
+ Diretivas <%@
+ 
+https://www.tutorialspoint.com/jsp/jsp_custom_tags.htm
 
+<%! - para metodos
+
+<jsp:include -> tag
+
+<vsj:Hello -> Cutsom tag
 
 

@@ -57,6 +57,7 @@
 			resultado = n1 * n2;
 		} else {
 			resultado = null;
+			operacao = "OPERAÇÃO INVÁLIDA";
 		}
 		
 		out.print("A " + operacao + " de " + n1 + " com " + n2 + " é " + resultado);
