@@ -8,7 +8,10 @@ Professor: ROQUE JOSÉ MULLER JÚNIOR
 Horario: 19 ~ 22
 Intervalo: 20:30
 
-smb://10.0.254.210/alunos em 10.0.254.210/semana_noite/Roque/Turma 11563
+http://satisfacao.elaborata.com.br/
+
+smb://10.0.254.210/alunos/semana_noite/Roque/Turma 11563
+
 /home/aluno/workspace-11563
 
 
@@ -78,10 +81,17 @@ Cannot complete the install because one or more required items could not be foun
  
 https://www.tutorialspoint.com/jsp/jsp_custom_tags.htm
 
-<%! - para metodos
+<%! - para metodos / é estatico
 
 <jsp:include -> tag
 
 <vsj:Hello -> Cutsom tag
+
+---------------------------------------------
+05/02/2020 - Aula 05
+
+valor = request.getParameter("valor");
+session.setAttribute("nomevar",valor);
+
 
 

@@ -8,4 +8,24 @@
       <tag-class>br.com.tagvlavros.HelloTag</tag-class>
       <body-content>empty</body-content>
    </tag>
+   
+   <tag>
+      <name>OperacaoMatematica</name>
+      <tag-class>br.com.tagvlavros.OperacaoMatematica</tag-class>
+      <body-content>empty</body-content>
+      
+      <attribute>
+         <name>tipoOperacao</name>       
+      </attribute>
+   
+      <attribute>
+         <name>primeiroValor</name>       
+      </attribute>
+      
+      <attribute>
+         <name>segundoValor</name>         
+      </attribute>
+   
+   </tag>
+   
 </taglib>
