@@ -15,7 +15,7 @@ public class OperacaoMatematica extends SimpleTagSupport {
 		JspWriter out = getJspContext().getOut();
 		
 		if(tipoOperacao.equals("SOMAR")) {
-			out.println(primeiroValor + " + " + segundoValor + " = " + Double.valueOf(primeiroValor)+Double.valueOf(segundoValor));
+			out.println(primeiroValor + " + " + segundoValor + " = " + (Double.valueOf(primeiroValor)+Double.valueOf(segundoValor)));
 		} else {
 			out.println("Operação inválida!");
 		}

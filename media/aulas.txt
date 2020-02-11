@@ -93,5 +93,25 @@ https://www.tutorialspoint.com/jsp/jsp_custom_tags.htm
 valor = request.getParameter("valor");
 session.setAttribute("nomevar",valor);
 
+---------------------------------------------
+06/02/2020 - Aula 06
+
+JSP de erro
+
+---------------------------------------------
+07/02/2020 - Aula 07
+
+BEANS 
+
+---------------------------------------------
+10/02/2020 - Aula 08
+
+CUSTOM TAG
+
+TAGLIB
+
+https://en.wikipedia.org/wiki/PMD_(software)
+
+---------------------------------------------
 
 

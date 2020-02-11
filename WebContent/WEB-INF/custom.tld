@@ -28,4 +28,10 @@
    
    </tag>
    
+   <tag>
+      <name>Saudacao</name>
+      <tag-class>br.com.tagvlavros.SaudacaoTag</tag-class>
+      <body-content>empty</body-content>
+   </tag>   
+   
 </taglib>

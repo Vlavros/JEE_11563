@@ -1,0 +1,59 @@
+<taglib>
+   <tlib-version>1.0</tlib-version>
+   <jsp-version>2.0</jsp-version>
+   <short-name>Aula 08</short-name>
+   
+   <tag>
+      <name>Real</name>
+      <tag-class>tag.Real</tag-class>
+      <body-content>empty</body-content>
+      
+      <attribute>
+         <name>cotacao</name>       
+      </attribute>
+   
+      <attribute>
+         <name>valor</name>       
+      </attribute>
+   
+   </tag>   
+   
+   <tag>
+      <name>Dolar</name>
+      <tag-class>tag.Dolar</tag-class>
+      <body-content>empty</body-content>
+      
+      <attribute>
+         <name>cotacao</name>       
+      </attribute>
+   
+      <attribute>
+         <name>valor</name>       
+      </attribute>
+   
+   </tag>    
+   
+   <tag>
+      <name>Cotacao</name>
+      <tag-class>tag.CotacaoMoeda</tag-class>
+      <body-content>scriptless</body-content>
+      
+      <attribute>
+         <name>cotacao</name>       
+      </attribute>
+   
+      <attribute>
+         <name>valor</name>       
+      </attribute>
+      
+      <attribute>
+         <name>moedaOrigem</name>       
+      </attribute>     
+      
+      <attribute>
+         <name>moedaDestino</name>       
+      </attribute>            
+   
+   </tag>    
+   
+</taglib>

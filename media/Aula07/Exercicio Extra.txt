@@ -1,0 +1,10 @@
+Criar uma página formulário contendo nome e idade e submeter
+
+Criar uma página que receberá os parâmetros da página formulário e realizar um teste condicional, como segue.
+
+se a idade for menor que 26 anos 
+  redirecionar para uma página de erro informando que a idade é insuficiente.
+
+senão se idade for maior ou igual a 26 anos
+  redirecionar para uma página de sucesso informando que está apto para ocupar o cargo ofertado.
+

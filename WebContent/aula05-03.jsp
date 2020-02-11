@@ -17,7 +17,7 @@
 </head>
 <body>
 
-<vsj:OperacaoMatematica primeiroValor="1" segundoValor="2" tipoOperacao="SOMAR"/>
+<vsj:OperacaoMatematica primeiroValor="1" segundoValor="2" tipoOperacao="SOMAR" />
 
 </body>
 </html>
