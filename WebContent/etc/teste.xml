@@ -1,0 +1,17 @@
+<pessoas>
+	<pessoa>
+		<nome>Zé</nome>
+		<sobrenome>Sousa</sobrenome>
+		<cpf>09887889865</cpf>
+	</pessoa>
+	<pessoa>
+		<nome>Luiz</nome>
+		<sobrenome>Pedroso</sobrenome>
+		<cpf>07841255578</cpf>
+	</pessoa>	
+	<pessoa>
+		<nome>Angela</nome>
+		<sobrenome>Barroso</sobrenome>
+		<cpf>07841255578</cpf>
+	</pessoa>		
+</pessoas>
