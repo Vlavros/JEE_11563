@@ -29,7 +29,7 @@ JAVASE: 1.6
 http://tomcat.apache.org/
 
 JRE - máquina virtual - rodar a aplicação
-JDK - Java develop kit - 
+JDK - Java develop +kit - 
 Eclipse 
 Apache
 
@@ -122,4 +122,16 @@ https://pt.wikipedia.org/wiki/Dart_(linguagem_de_programa%C3%A7%C3%A3o)
 Servlets
 
 ctrl+shif+f - identar
+
+---------------------------------------------
+12/02/2020 - Aula 10
+
+Servlets
+
+//finalziar tomcat
+ps -aux | grep tomcat
+kill -9 8718
+
+astah community
+
 

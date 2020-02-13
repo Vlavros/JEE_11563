@@ -17,10 +17,30 @@
 		<servlet-name>vladServlet</servlet-name>
 		<servlet-class>br.com.vlavros.servlet.MinhaServlet</servlet-class>
 	</servlet>
-
+	
 	<servlet-mapping>
 		<servlet-name>vladServlet</servlet-name>
-		<url-pattern>/Minha</url-pattern>
-	</servlet-mapping>
+		<url-pattern>/Minha/Servlet</url-pattern>
+	</servlet-mapping>	
+	
+	<servlet>
+		<servlet-name>vladLogin</servlet-name>
+		<servlet-class>br.com.vlavros.servlet.LoginServlet</servlet-class>
+	</servlet>	
+	
+	<servlet-mapping>
+		<servlet-name>vladLogin</servlet-name>
+		<url-pattern>/Login</url-pattern>
+	</servlet-mapping>	
+	
+	<servlet>
+		<servlet-name>vladLogout</servlet-name>
+		<servlet-class>br.com.vlavros.servlet.LogoutServlet</servlet-class>
+	</servlet>	
+	
+	<servlet-mapping>
+		<servlet-name>vladLogout</servlet-name>
+		<url-pattern>/Logout</url-pattern>
+	</servlet-mapping>		
 
 </web-app>

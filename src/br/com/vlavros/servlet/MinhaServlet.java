@@ -21,17 +21,21 @@ public class MinhaServlet extends HttpServlet {
 			//super.doGet(request, response);
 		response.setContentType("text/html");
 		
+		String texto = request.getParameter("texto");
+		
 		PrintWriter out = response.getWriter();
 		out.println("<html><body>");
 		out.println("<h1>Bem vindo ao Servlet</h1>");
 		out.println(request.getContextPath());
+		out.println("<br>");
+		out.println(texto);
 		out.println("</body></html>");
 		
 	}
 	
 	@Override
 	public void doPost(HttpServletRequest request,HttpServletResponse response) throws IOException,ServletException{
-			//super.doGet(request, response);
+			doGet(request, response);
 	}	
 
 	
