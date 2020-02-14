@@ -115,7 +115,8 @@ https://en.wikipedia.org/wiki/PMD_(software)
 ---------------------------------------------
 11/02/2020 - Aula 09
 
-Exemplos TAGLIB
+Exemplos TAGLIB---------------------------------------------
+12/02/2020 - Aula 10
 
 https://pt.wikipedia.org/wiki/Dart_(linguagem_de_programa%C3%A7%C3%A3o)
 
@@ -133,5 +134,16 @@ ps -aux | grep tomcat
 kill -9 8718
 
 astah community
+
+---------------------------------------------
+13/02/2020 - Aula 11
+
+MVC
+DAO
+
+https://github.com/FernandoIbaePLiborio/EmporiosCuritiba/tree/master/EmporiosCuritiba/src/com/emporios
+
+FontEnd - Adobe XD For Front End Developers
+https://www.adobe.com/br/products/xd/resources.html
 
 

@@ -1,8 +1,14 @@
-package br.com.vlavros.servlet;
+package br.com.vlavros.model;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class Usuario {
+public class Usuario implements Serializable {
+	/**
+	 * POJO
+	 */
+	private static final long serialVersionUID = 1L;
+	
 	private Integer id;
 	private String nome;
 	private String login;
