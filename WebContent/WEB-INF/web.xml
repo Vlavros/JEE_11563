@@ -41,6 +41,26 @@
 	<servlet-mapping>
 		<servlet-name>vladLogout</servlet-name>
 		<url-pattern>/Logout</url-pattern>
-	</servlet-mapping>		
+	</servlet-mapping>	
+	
+	<servlet>
+		<servlet-name>CadUsuarioServlet</servlet-name>
+		<servlet-class>br.com.elaborata.exercicio13.servlets.CadUsuarioServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>CadUsuarioServlet</servlet-name>
+		<url-pattern>/CadUsuario</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ListaUsuarioServlet</servlet-name>
+		<servlet-class>br.com.vlavros.servlet.ListaUsuarioServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>ListaUsuarioServlet</servlet-name>
+		<url-pattern>/ListaUsuario</url-pattern>
+	</servlet-mapping>	
 
 </web-app>

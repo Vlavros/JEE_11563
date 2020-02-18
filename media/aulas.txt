@@ -130,7 +130,8 @@ ctrl+shif+f - identar
 Servlets
 
 //finalziar tomcat
-ps -aux | grep tomcat
+ps -aux | gr---------------------------------------------
+14/02/2020 - Aula 14ep tomcat
 kill -9 8718
 
 astah community
@@ -145,5 +146,32 @@ https://github.com/FernandoIbaePLiborio/EmporiosCuritiba/tree/master/EmporiosCur
 
 FontEnd - Adobe XD For Front End Developers
 https://www.adobe.com/br/products/xd/resources.html
+
+---------------------------------------------
+14/02/2020 - Aula 12
+
+Exercicios com BD
+
+---------------------------------------------
+17/02/2020 - Aula 13
+
+https://www.tutorialspoint.com/how-to-get-the-next-auto-increment-id-in-mysql
+
+use universidade;
+
+select *
+FROM tb_usuario;
+
+drop table tb_usuario;
+
+create table tb_usuario
+(
+id int auto_increment,
+primary key(id),
+usuario varchar(40),
+senha varchar(40)
+);
+
+
 
 

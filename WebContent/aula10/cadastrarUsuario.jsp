@@ -13,23 +13,6 @@
 </head>
 <body style="width: 50%; margin: auto;">
 
-	<%
-		/*String usuario = null;
-			
-		
-			try {
-				usuario = session.getAttribute("usuario").toString();
-				
-				if(usuario == null) {
-					response.sendRedirect("./login.jsp");
-				}
-				
-			} catch(Exception e) {
-				response.sendRedirect("./login.jsp");
-			}
-		*/
-	%>
-
 	<c:set var="usuario" value="${sessionScope.usuario}" />
 
 	<c:choose>
