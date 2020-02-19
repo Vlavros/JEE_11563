@@ -1,21 +1,20 @@
 /**
  * 
  */
-package br.com.elaborata.exercicio13.facade;
+package br.com.vlavros.facede;
 
 import java.sql.SQLException;
 import java.util.List;
 
 import br.com.elaborata.exercicio13.dao.UsuarioDAO;
-import br.com.elaborata.exercicio13.dao.implementacao.UsuarioImplementacaoDAO;
+import br.com.vlavros.dao.jpa.UsuarioImplementacaoDAO;
 import br.com.elaborata.exercicio13.pojo.Usuario;
 
 /**
- * @author Roque Junior
  *
  */
-public class UsuarioFacade {
-
+public class UsuarioFacadeJPA {
+	
 	UsuarioDAO dao = new UsuarioImplementacaoDAO();
 
 	public void cadastrar(Usuario usuario) throws Exception {
@@ -29,12 +28,12 @@ public class UsuarioFacade {
 				e1.printStackTrace();
 			}
 		}
-
+		
 	}
-
-	public void alterar(Usuario usuario) throws Exception {
+	
+	public List<Usuario> listar() throws Exception {
 		try {
-			dao.alterar(usuario);
+			return dao.listar();
 		} catch (SQLException e) {
 			try {
 				throw new Exception("Erro de SQL");
@@ -42,26 +41,10 @@ public class UsuarioFacade {
 				// TODO Auto-generated catch block
 				e1.printStackTrace();
 			}
+			return null;
 		}
-
-	}
-
-	public Usuario buscar(Usuario usuario) throws Exception {
-
-		return dao.buscar(usuario);
-
-	}
-
-	public List<Usuario> listar() {
-
-		try {
-			return dao.listar();
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		return null;
-
+		
+		
 	}
 
 }

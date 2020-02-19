@@ -4,7 +4,6 @@
 package br.com.professor;
 
 import java.sql.SQLException;
-import java.util.ArrayList;
 import java.util.List;
 
 import javax.persistence.EntityManager;
@@ -52,12 +51,12 @@ public class UsuarioImplementacaoDAO implements UsuarioDAO {
 
 	}
 
+	@SuppressWarnings("unchecked")
 	@Override
 	public List<Usuario> listar() throws SQLException {
-		
-		return em.
-				createQuery("from Usuario order by usuario ASC")
-				.getResultList();
+		String hql = "select u from Usuario u order by usuario ASC";
+		Query query = em.createQuery(hql);
+		return query.getResultList();
 	}
 
 	@Override

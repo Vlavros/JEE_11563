@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	id="WebApp_ID" version="2.5">
+
+	<display-name>Exercicio13</display-name>
+
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+
+	<servlet>
+		<servlet-name>LoginServlet</servlet-name>
+		<servlet-class>br.com.elaborata.exercicio13.servlets.LoginServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/Login</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>LogoutServlet</servlet-name>
+		<servlet-class>br.com.elaborata.exercicio13.servlets.LogoutServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>LogoutServlet</servlet-name>
+		<url-pattern>/Logout</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>CadUsuarioServlet</servlet-name>
+		<servlet-class>br.com.elaborata.exercicio13.servlets.CadUsuarioServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>CadUsuarioServlet</servlet-name>
+		<url-pattern>/CadUsuario</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>CarregaAltUsuarioServlet</servlet-name>
+		<servlet-class>br.com.elaborata.exercicio13.servlets.CarregaAltUsuarioServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>CarregaAltUsuarioServlet</servlet-name>
+		<url-pattern>/CarregaAltUsuario</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>AltUsuarioServlet</servlet-name>
+		<servlet-class>br.com.elaborata.exercicio13.servlets.AltUsuarioServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>AltUsuarioServlet</servlet-name>
+		<url-pattern>/AltUsuario</url-pattern>
+	</servlet-mapping>
+
+</web-app>

@@ -3,15 +3,13 @@
  */
 package br.com.elaborata.exercicio13.dao.implementacao;
 
-import java.sql.Connection;
-import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.ArrayList;
 import java.util.List;
 
-import com.mysql.jdbc.PreparedStatement;
+import javax.persistence.EntityManager;
+import javax.persistence.Query;
 
-import br.com.elaborata.exercicio13.dao.Conexao;
+import br.com.elaborata.exercicio13.dao.JPAConexaoUtil;
 import br.com.elaborata.exercicio13.dao.UsuarioDAO;
 import br.com.elaborata.exercicio13.pojo.Usuario;
 
@@ -21,77 +19,46 @@ import br.com.elaborata.exercicio13.pojo.Usuario;
  */
 public class UsuarioImplementacaoDAO implements UsuarioDAO {
 
-	Connection con = Conexao.getConexao();
-	
-	
-	@Override
-	public void cadastrar(Usuario usuario) throws SQLException {
-		
-		String sql = "insert into tb_usuario(usuario, senha) values (?, ?)";
-		
-		PreparedStatement pstmt = (PreparedStatement) con.prepareStatement(sql);
-		
-		pstmt.setString(1, usuario.getUsuario());
-		pstmt.setString(2, usuario.getSenha());
-		
-		pstmt.execute();
-		
-		
-		
-		
-	}
+	private EntityManager em;
 
-	@Override
-	public void alterar(Usuario usuario) throws SQLException {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void excluir(Usuario usuario) throws SQLException {
-		// TODO Auto-generated method stub
-		
+	public UsuarioImplementacaoDAO() {
+		em = JPAConexaoUtil.criaEM();
 	}
 
 	@Override
 	public List<Usuario> listar() throws SQLException {
-		String sql = "select * from tb_usuario";
-		
-		PreparedStatement pstmt = (PreparedStatement) con.prepareStatement(sql);
-		
-		pstmt.execute();
-		
-		ResultSet resultSet=(ResultSet) pstmt.executeQuery();
-		List<Usuario> usuarios = new ArrayList<Usuario>();
-		Usuario usuario = null;
-		
-		
-		while (resultSet.next()){
-			usuario = new Usuario();
-			usuario.setId(resultSet.getInt("id"));
-			usuario.setUsuario(resultSet.getString("usuario"));
-			usuario.setSenha(resultSet.getString("senha"));
-			
-			usuarios.add(usuario);                        
-			usuario = null;			
-			
-		}
-		
-		pstmt.close();
-		
-		//List<Usuario> res=(List<Usuario>) pstmt.executeQuery();
-		//List<Usuario> usuarios = (List<Usuario>) res.;
-		//List<Usuario> a = (List<Usuario>) res.getObject(); 
-		
-		return usuarios;
+		String hql = "from Usuario order by usuario ASC";
+		Query query = em.createQuery(hql);
+		return query.getResultList();
+	}
+
+	@Override
+	public void cadastrar(Usuario usuario) throws SQLException {
+		em.getTransaction().begin();
+		em.persist(usuario);
+		em.getTransaction().commit();
+	}
+
+	@Override
+	public void alterar(Usuario usuario) throws SQLException {
+		em.getTransaction().begin();
+		em.merge(usuario);
+		em.getTransaction().commit();
+
+	}
+
+	@Override
+	public void excluir(Usuario usuario) throws SQLException {
+		em.getTransaction().begin();
+		em.remove(usuario);
+		em.getTransaction().commit();
+
 	}
 
 	@Override
 	public Usuario buscar(Usuario usuario) throws SQLException {
-		// TODO Auto-generated method stub
-		return null;
+		
+		return em.find(Usuario.class, usuario.getId());
 	}
-
-	
 
 }

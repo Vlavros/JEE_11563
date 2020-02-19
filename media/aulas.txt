@@ -172,6 +172,16 @@ usuario varchar(40),
 senha varchar(40)
 );
 
+---------------------------------------------
+18/02/2020 - Aula 14
 
+JPA - Java Persistence API
+https://www.devmedia.com.br/introducao-a-jpa-java-persistence-api/28173
 
+Flutter
+https://pt.wikipedia.org/wiki/Flutter
+
+JSF x Primeface 
+
+EJB
 

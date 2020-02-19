@@ -18,41 +18,32 @@ import br.com.elaborata.exercicio13.pojo.Usuario;
  * @author Roque Junior
  *
  */
-public class CadUsuarioServlet extends HttpServlet {
+public class CarregaAltUsuarioServlet extends HttpServlet {
+
+	static private UsuarioFacade usuarioFacade = new UsuarioFacade();
 
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
 
-	static private UsuarioFacade usuarioFacade = new UsuarioFacade();
-
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		String id = req.getParameter("id");
+
+		Usuario usuario = new Usuario();
+		usuario.setId(Integer.valueOf(id));
 
 		try {
-			String login = req.getParameter("username") != null ? req.getParameter("username") : "";
+			usuario = usuarioFacade.buscar(usuario);
+			
+			req.getSession().setAttribute("user", usuario);
 
-			String senha = req.getParameter("password") != null ? req.getParameter("password") : "";
-
-			if ((login != null && !login.isEmpty()) && (senha != null && !senha.isEmpty())) {
-				Usuario usuario = new Usuario();
-				usuario.setUsuario(login);
-				usuario.setSenha(senha);
-
-				usuarioFacade.cadastrar(usuario);
-				req.getSession().setAttribute("msg", "Cadastrado com sucesso");
-
-			} else {
-				req.getSession().setAttribute("msg", "Ocorreu um problema, tente novamente");
-			}
-			resp.sendRedirect(req.getContextPath() + "/pages/cad_usuario.jsp");
-
+			resp.sendRedirect(req.getContextPath() + "/pages/alterar_usuario.jsp");
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-
 	}
 
 	@Override

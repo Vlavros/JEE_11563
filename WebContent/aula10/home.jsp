@@ -56,9 +56,10 @@
           Usuário
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="${pageContext.request.contextPath}/pages/cad_usuario.jsp">Cadastrar Usuário</a>
+          <a class="dropdown-item" href="./cadastrarUsuario.jsp">Usuário</a>
+          <!-- a class="dropdown-item" href="${pageContext.request.contextPath}/pages/cad_usuario.jsp">Cadastrar Usuário</a-->
           <a class="dropdown-item" href="${pageContext.request.contextPath}/ListaUsuario">Listar Usuários</a>
-          <!-- a class="dropdown-item" href="./cadastrarUsuario.jsp">Usuário</a-->
+          
           <!-- a class="dropdown-item disabled" href="#">Empregado</a-->
           <!-- a class="dropdown-item disabled" href="#">Empresa</a-->
         </div>

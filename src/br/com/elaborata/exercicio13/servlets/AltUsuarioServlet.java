@@ -9,7 +9,6 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 
 import br.com.elaborata.exercicio13.facade.UsuarioFacade;
 import br.com.elaborata.exercicio13.pojo.Usuario;
@@ -18,7 +17,7 @@ import br.com.elaborata.exercicio13.pojo.Usuario;
  * @author Roque Junior
  *
  */
-public class CadUsuarioServlet extends HttpServlet {
+public class AltUsuarioServlet extends HttpServlet {
 
 	/**
 	 * 
@@ -31,22 +30,13 @@ public class CadUsuarioServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
 		try {
-			String login = req.getParameter("username") != null ? req.getParameter("username") : "";
+			Usuario usuario = (Usuario) req.getSession().getAttribute("user");
 
-			String senha = req.getParameter("password") != null ? req.getParameter("password") : "";
+			usuarioFacade.alterar(usuario);
+			
+			req.getSession().setAttribute("msg", "Alterado com sucesso");
 
-			if ((login != null && !login.isEmpty()) && (senha != null && !senha.isEmpty())) {
-				Usuario usuario = new Usuario();
-				usuario.setUsuario(login);
-				usuario.setSenha(senha);
-
-				usuarioFacade.cadastrar(usuario);
-				req.getSession().setAttribute("msg", "Cadastrado com sucesso");
-
-			} else {
-				req.getSession().setAttribute("msg", "Ocorreu um problema, tente novamente");
-			}
-			resp.sendRedirect(req.getContextPath() + "/pages/cad_usuario.jsp");
+			resp.sendRedirect(req.getContextPath() + "/pages/alterar_usuario.jsp");
 
 		} catch (Exception e) {
 			// TODO Auto-generated catch block

@@ -7,7 +7,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Listar Alunos</title>
+<title>Exercicio 13 - Servlets - Listar Alunos</title>
 </head>
 <body>
 	<table>
@@ -29,10 +29,11 @@
 		</tr>
 		<%
 			for (Usuario usuario : usuarios) {
+				request.setAttribute("${usuario.getId()}", usuario);
 		%>
 		<tr>
 			<td width="5%"><a
-				href="alterar_usuario.jsp?id=<%=usuario.getId()%>&opc='alterar'">Alterar</a></td>
+				href="${pageContext.request.contextPath}/CarregaAltUsuario?id=<%=usuario.getId()%>">Alterar</a></td>
 			<%-- <td width="15%"><%=usuario.getId()%></td> --%>
 			<td width="30%"><%=usuario.getUsuario()%></td>
 			<td width="30%"><%=usuario.getSenha()%></td>

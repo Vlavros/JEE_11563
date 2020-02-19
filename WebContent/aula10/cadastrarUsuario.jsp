@@ -56,7 +56,7 @@
 
 	<h4>Formulário de Cadastro: Usuários</h4>
 
-	<form action="#" method="post">
+	<form action="${pageContext.request.contextPath}/CadUsuarioJPA" method="post">
 		<div class="form-group">
 			<label for="nome">Nome Completo</label> <input type="text"
 				class="form-control" name="nome">
@@ -67,11 +67,11 @@
 		</div>	
 		<div class="form-group">
 			<label for="nome">Login</label> <input type="text"
-				class="form-control" name="login">
+				class="form-control" name="username">
 		</div>
 		<div class="form-group">
 			<label for="senha">Senha</label> <input type="password"
-				class="form-control" name="senha">
+				class="form-control" name="password">
 		</div>
 		<button type="submit" class="btn btn-primary">Enviar</button>
 	</form>
