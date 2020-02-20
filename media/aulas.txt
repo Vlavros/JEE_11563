@@ -161,7 +161,8 @@ use universidade;
 
 select *
 FROM tb_usuario;
-
+---------------------------------------------
+18/02/2020 - Aula 14
 drop table tb_usuario;
 
 create table tb_usuario
@@ -184,4 +185,24 @@ https://pt.wikipedia.org/wiki/Flutter
 JSF x Primeface 
 
 EJB
+
+---------------------------------------------
+19/02/2020 - Aula 15
+
+Orientado a eventos x Orientado a objetos x Orientado a serviços
+
+ - JSF
+ 
+ http://localhost:8080/ProjetoJSF/inicio.jsf
+ http://localhost:8080/Projeto1/jsf/inicio.jsf
+ 
+ Scrum x Agile
+ 
+ RichFaces x PrimeFaces
+ 
+ Ad hoc: Para isso/finalidade
+ https://pt.wikipedia.org/wiki/Ad_hoc
+ 
+ 
+---------------------------------------------
 

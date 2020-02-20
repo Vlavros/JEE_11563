@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+
+<ui:composition template="template.xhtml">
+	<ui:define name="title">City Setup</ui:define>
+
+	<ui:define name="header">
+		<h3 style="border-bottom: thick solid #000000;">Cabeçalho</h3>
+	</ui:define>
+	<ui:define name="content">
+		<br />
+		<h:outputText value="#{bean.mensagem}" />
+		
+		<h:form>
+			<h:outputLabel value="Nome:" />
+			<h:inputText value="#{bean.nome}"/> <br />
+			<h:commandButton action="pagina2" value="Entrar" />
+			<h:commandButton action="#{bean.navegar}" value="Entrar" />
+		</h:form>
+		
+	</ui:define>
+	<ui:define name="footer">
+		<h3 style="border-top: thick solid #000000;">Rodapé</h3>
+	</ui:define>
+</ui:composition>
+</html>
