@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+
+<ui:composition template="template.xhtml">
+	<ui:define name="title">Portal</ui:define>
+
+	<ui:define name="header">
+		<h3 style="border-bottom: thick solid #000000;">
+			Bem vindo,
+			<h:outputLabel value="#{login.nome}" />
+		</h3>
+	</ui:define>
+	<ui:define name="content">
+		<br />
+		<p>14 – Criar uma aplicação que contenha um template de páginas,
+			uma página de login, uma página de boas vindas. Se o login e senha
+			estiverem corretos encaminhar para a página de boas vindas.</p>
+		<p>15 – Acrescentar ao exercício anterior uma condição que se for
+			verdadeira encaminhe para a página de boas vindas, mas se for falsa
+			mostra uma mensagem de erro na página de login, por exemplo se o
+			login e senha forem inválidos mostrará uma mensagem.</p>
+
+	</ui:define>
+	<ui:define name="footer">
+		<h3 style="border-top: thick solid #000000;">Rodapé</h3>
+	</ui:define>
+</ui:composition>
+</html>

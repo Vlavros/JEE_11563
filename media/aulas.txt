@@ -205,4 +205,20 @@ Orientado a eventos x Orientado a objetos x Orientado a serviços
  
  
 ---------------------------------------------
+20/02/2020 - Aula 16
+
+infojobs
+curriculos
+infoti
+https://pt.wikipedia.org/wiki/Plataforma_Lattes
+
+https://pt.wikipedia.org/wiki/Flutter
+
+JSF
+
+http://localhost:8080/Projeto1/ExercicioJsf/login.jsf
+
+
+
+
 

@@ -15,6 +15,20 @@
     		<from-outcome>ok</from-outcome>
     		<to-view-id>/pagina2.xhtml</to-view-id>
     	</navigation-case>
+    	
     </navigation-rule>
+    
+<navigation-rule>
+	
+	<display-name>login.xhtml</display-name>
+	<from-view-id>/login.xhtml</from-view-id>
+	
+	<navigation-case>
+		<from-action>#{login.logar}</from-action>
+		<from-outcome>ok</from-outcome>
+		<to-view-id>/portal.xhtml</to-view-id>
+	</navigation-case>
+	
+</navigation-rule>        
 
 </faces-config>
