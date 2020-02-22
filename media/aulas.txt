@@ -83,7 +83,7 @@ https://www.tutorialspoint.com/jsp/jsp_custom_tags.htm
 
 <%! - para metodos / é estatico
 
-<jsp:include -> tag
+<jsp:include -> taglan/
 
 <vsj:Hello -> Cutsom tag
 
@@ -126,7 +126,7 @@ ctrl+shif+f - identar
 
 ---------------------------------------------
 12/02/2020 - Aula 10
-
+lan/
 Servlets
 
 //finalziar tomcat
@@ -218,7 +218,25 @@ JSF
 
 http://localhost:8080/Projeto1/ExercicioJsf/login.jsf
 
+---------------------------------------------
+21/02/2020 - Aula 17
 
+Spring
+
+POJO - elemento tabela
+VO - Value Object =/= DTO
+BO
+PO - semelhante pojo, mas igual tabela
+DTO
+DAO
+
+[V]isão -> (vo) -> [C]ontroller -> (dto) -> [M]odel (pojo)
+
+EJB
+
+https://pt.wikipedia.org/wiki/TypeScript
+
+applet
 
 
 
